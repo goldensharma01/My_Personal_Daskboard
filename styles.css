@@ -1,0 +1,125 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+.navbar {
+  background-color: #1f2937;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1rem;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.email {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.item {
+  margin-bottom: 1rem;
+}
+
+.right {
+  float: right;
+  font-weight: normal;
+  color: #666;
+}
+
+.tags span {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.4rem 1rem;
+  background: #f0f0f0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 1rem 0 0;
+  }
+
+  .right {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-top: 0.25rem;
+  }
+
+  .card h2 {
+    text-align: left;
+  }
+
+  .email {
+    text-align: left;
+  }
+}
